@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+   <title>card</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+  
+.up {
+    background-color: #152238;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.small {
+    color: white;
+    font-size: 10px;
+    margin-left: 1vw;
+
+}
+
+.bg {
+    background-color: #d3a95c;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.head {
+    color: #152238;
+    margin-left: 1vw;
+
+    font-family: Times New Roman;
+    font-size: 35px;
+    margin-top: -1px;
+}
+
+.bars {
+    margin-top: 7px;
+}
+
+.user {
+    color: white;
+    font-size: 25px;
+    margin-left: 5vw;
+    margin-right: 2vw;
+
+}
+
+.user1 {
+    color: white;
+    font-size: 25px;
+}
+
+.user3 {
+    color: white;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-left: 2vw;
+}
+
+
+
+.user2 {
+    color: white;
+    font-size: 25px;
+    margin-left: 2vw;
+}
+
+.icon {
+
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+
+.bar {
+    width: 40vw;
+    height: 30px;
+    margin-left: 20px
+}
+
+.bar2 {
+    width: 25vw;
+    height: 30px;
+    margin-left: 5px
+}
+
+
+.pic1 {
+    height: 200px;
+    width: 100vw;
+
+}
+
+
+
+.container-full {
+    background-color: white;
+    margin: 3vw;
+    padding: 30px;
+
+
+}
+
+.pick {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.pickcake {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.type {
+    margin: 5px;
+    border-radius: 15px;
+    width: 21vw;
+}
+
+.type1 {
+    margin: 5px;
+    border-radius: 15px;
+    width: 27vw;
+}
+
+.rev {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.review {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.revbox {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.rate {
+    background-color: red;
+
+}
+
+.review-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.one {
+    text-align: center;
+    background-color: white;
+    margin-bottom: 0px;
+}
+
+.flavourful {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.image-samemid {
+    display: flex;
+    flex-direction: "row";
+    padding: 10px;
+}
+
+.reviews {
+    color: #ff9966;
+}
+
+.image-samemid4 {
+    background-color: #ebadd6;
+    width: 100vw;
+    padding: 10px;
+
+}
+
+.sameday {
+
+    margin-left: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 4px;
+    color: #999966;
+    margin-bottom: 10px;
+}
+
+.mid {
+    margin-left: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    color: #999966;
+    box-shadow: 3px 4px;
+}
+
+.Celebrate-Special {
+    color: #ffffff;
+    font-size: 30px;
+    text-shadow: 2px 3px #003300;
+    font-family: "roboto";
+
+}
+
+.Celebrate {
+    margin-left: 20px;
+}
+
+.Birthday-Anniversary {
+    display: flex;
+    flex-direction: "row";
+
+}
+
+.birth {
+    width: 50vw;
+
+}
+
+.Birthday-para {
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.International {
+    color: #ffffff;
+}
+
+.usa {
+    display: flex;
+    flex-direction: row;
+}
+
+.flag {
+    width: 5vw;
+
+}
+
+.usa-img {
+    margin: 5vw;
+}
+
+.flag-para {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+.rose-cake {
+    display: flex;
+    flex-direction: "row";
+}
+
+.recipe-para {
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.recipe-head {
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 4px #1a001a;
+}
+
+.rose-but {
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    background-color: #cc00cc;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.rose-image-cake {
+    width: 50vw;
+}
+
+.rose-button {
+    text-align: center;
+}
+
+.lastbar {
+    background-color: #152238;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.lasticon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.sign {
+    margin-left: 50vw;
+}
+
+.apple {
+    width: 20px;
+}
+
+.flight {
+    text-align: center;
+    margin: 18px;
+}
+
+.world-wide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #e5e4e2;
+    padding: 10px;
+
+}
+
+.world-head {
+    color: black;
+    font-weight: bold;
+}
+
+.world-para {
+    font-size: 15px;
+}
+
+
+
+</style>
+    
+    <body>
+        <div class="image-samemid4">
+            <div class="up">
+                <p class="small">currency INR</p>
+                <p class="small">Call us +91 921 242 2000</p>
+                <p class="small">Franchise Enquires</p>
+                <p class="small">Corporate Office</p>
+                <p class="small">More</p>
+            </div>
+            <div class="bg">
+                <div class="logo">
+                    <img src="https://i.pinimg.com/originals/a7/e0/45/a7e045a040ca75b2ed8bc5eade05e15d.png" class="icon"></i>
+                    <h1 class="head">fnp</h1>
+                    <p class="small">Ferns</br> n </br>petals</p>
+                </div>
+                <div class="bars">
+                    <input type="text" placeholder="Search.." class="bar">
+                    <input type="text" placeholder="Select Delivery Location.." class="bar2">
+                    <i class="fas fa-user user"></i>
+                    <i class="fas fa-shopping-cart user1"></i>
+                    <i class="fas fa-phone user2"></i>
+                </div>
+            </div>
+    
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/Cake-Top-Banner_web_11aug.jpg" class="d-block w-100 pic1" >
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/Photo-Cakes_Microsite_web.jpg" class="d-block w-100 pic1" >
+                    </div>
+    
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+    
+    
+    
+            <div class="one">
+                <h1 class="flavourful">Cakes: Fresh & Flavourful</h1>
+                <p class="reviews">4.4 star_half 105700 Reviews </p>
+            </div>
+    
+            <div class="image-samemid">
+                <img src="https://www.fnp.com/assets/images/custom/cakes_23/cakes_delivery/Same-Day_Web.jpg" width="48%" class="sameday">
+                <img src="https://www.fnp.com/assets/images/custom/cakes_23/cakes_delivery/Midnight-Delivery_Web.jpg" width="49%" class="mid">
+            </div>
+            <div class="image-samemid">
+                <img src="https://www.fnp.com/assets/images/custom/cakes_23/cakes_delivery/Bestseller_Web.jpg" width="48%" class="sameday">
+                <img src="https://www.fnp.com/assets/images/custom/cakes_23/cakes_delivery/New-Arrival_Web.jpg" width="49%" class="mid">
+            </div>
+            <div class="Celebrate">
+                <hi class="Celebrate-Special">Celebrate Special Occasions</hi>
+            </div>
+            <div class="Birthday-Anniversary">
+                <div class="Birthday">
+                    <img src="https://www.fnp.com/assets/images/custom/cakes_23/special_occasion/Birthday_web.jpg" class="birth">
+                    <p class="Birthday-para">Birthday</p>
+                </div>
+                <div class="Birthday">
+                    <img src="https://www.fnp.com/assets/images/custom/cakes_23/special_occasion/Anniversary_web.jpg" class="birth">
+                    <p class="Birthday-para">Anniversary</p>
+                </div>
+            </div>
+    
+    
+            <div class="rose-cake p-3">
+                <img src="https://th.bing.com/th?id=OIP.Uycu5ZuIu-EOKynFgFRmuAHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" class="rose-image-cake">
+                <div>
+                    <h1 class="recipe-head">Recipe</h1>
+                    <p class="recipe-para">For making Homemade Cake, make sure you whisk the cake mix well.
+                        And better use an electric blender for mixing all the ingredients,
+                        as this will make the mixture frothy and light.<br> If you do not have
+                        olive oil at home, you can even use butter or ghee. Or you can use homemade
+                        white butter for extra flavour.</p>
+                    <div class="rose-button">
+                        <button class="rose-but">Taste it love it</button>
+                    </div>
+    
+                </div>
+            </div>
+    
+    
+    
+            <div class="container-full">
+                <h3>Pick A Flavour</h3>
+                <div class="pick">
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/flavour/Chocolate-Cakes-web_2.jpg" class="type" />
+                        <h4 class="text-center">Chocolate Cakes</h4>
+                    </div>
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/flavour/Black-Forest-Cakes_web.jpg" class="type" />
+                        <h4 class="text-center">Black Forest Cakes</h4>
+                    </div>
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/flavour/Butterscotch-Cakes_web.jpg" class="type" />
+                        <h4 class="text-center">ButterScotch Cakes</h4>
+                    </div>
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/flavour/Pineapple-Cakes_web.jpg" class="type" />
+                        <h4 class="text-center">Pineapple Cakes</h4>
+                    </div>
+                </div>
+    
+                <div class="pick">
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/flavour/Truffle-Cakes_web.jpg" class="type" />
+                        <h4 class="text-center">Truffle Cakes</h4>
+                    </div>
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/flavour/Red-Velvet-Cakes_web.jpg" class="type" />
+                        <h4 class="text-center">Red Velvet Cakes</h4>
+                    </div>
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/flavour/Fresh-Fruit-Cakes_web.jpg" class="type" />
+                        <h4 class="text-center">Fresh Fruits Cakes</h4>
+                    </div>
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/flavour/Vanila-Cakes_web.jpg" class="type" />
+                        <h4 class="text-center">Vanilla Cakes</h4>
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+            <div class="container-full">
+                <h3>Shop By Price</h3>
+                <div class="pick">
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/shop_by_price/999_web.jpg" class="type1" />
+                    </div>
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/shop_by_price/1499_web.jpg" class="type1" />
+                    </div>
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/shop_by_price/1999_web.jpg" class="type1" />
+    
+                    </div>
+    
+                </div>
+            </div>
+    
+    
+    
+    
+            <div class="container-full">
+                <h3>Explore Cakes</h3>
+                <div class="pick">
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/featured/Flowers-N-Cakes_web.jpg" class="type1" />
+                        <h4 class="text-center">Flower N Cakes</h4>
+                    </div>
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/featured/Cream-Cakes_web.jpg" class="type1" />
+                        <h4 class="text-center">Cream Cakes</h4>
+                    </div>
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/featured/Kids_web.jpg" class="type1" />
+                        <h4 class="text-center">Kids Cakes</h4>
+                    </div>
+    
+                </div>
+    
+                <div class="pick">
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/featured/Pinata-Cakes_web.jpg" class="type1" />
+                        <h4 class="text-center">Pinata Cakes</h4>
+                    </div>
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/featured/Fondant-Cakes_web.jpg" class="type1" />
+                        <h4 class="text-center">Fondant Cakes</h4>
+                    </div>
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/featured/Photo-Cakes_web.jpg" class="type1" />
+                        <h4 class="text-center">Photo Cakes</h4>
+                    </div>
+    
+                </div>
+    
+                <div class="pick">
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/featured/Designer-Cakes_web.jpg" class="type1" />
+                        <h4 class="text-center">Designer Cakes</h4>
+                    </div>
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/featured/Dry-Cakes_web.jpg" class="type1" />
+                        <h4 class="text-center">Dry Cakes</h4>
+                    </div>
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/featured/Jar-Cakes_web.jpg" class="type1" />
+                        <h4 class="text-center">Jar Cakes</h4>
+                    </div>
+    
+                </div>
+            </div>
+    
+    
+            <div class="container-full">
+                <h3>Pick A Color</h3>
+                <div class="pick">
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/pick_a_color/Brown_web.jpg" class="type" />
+                        <h4 class="text-center">Brown</h4>
+                    </div>
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/pick_a_color/Red_web.jpg" class="type" />
+                        <h4 class="text-center">Red</h4>
+                    </div>
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/pick_a_color/Blue_web.jpg" class="type" />
+                        <h4 class="text-center">Blue</h4>
+                    </div>
+                    <div class="pickcake">
+                        <img src="https://www.fnp.com/assets/images/custom/cakes_23/pick_a_color/White_web.jpg" class="type" />
+                        <h4 class="text-center">White</h4>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container-full">
+                <h3>International</h13>
+                    <div class="usa">
+                        <div class="usa-img">
+                            <img src="https://th.bing.com/th?id=OIP.xqiJd2V-wYYtVhqBm0yFnwHaE-&w=304&h=205&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" class="flag">
+                            <p class="flag-para">USA</p>
+                        </div>
+                        <div class="usa-img">
+                            <img src="https://th.bing.com/th?id=OIP.U-h9wYdOSH047roWjY_1TgAAAA&w=308&h=202&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" class="flag">
+                            <p class="flag-para">UK</p>
+                        </div>
+                        <div class="usa-img">
+                            <img src="https://th.bing.com/th?id=OIP.es6fxUyT2lrn6Von-_dzAgHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" class="flag">
+                            <p class="flag-para">Australia</p>
+                        </div>
+                        <div class="usa-img">
+                            <img src="https://th.bing.com/th?id=OIP.-Ubpcb9fGGBwD10SF04b_gHaEv&w=312&h=199&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" class="flag">
+                            <p class="flag-para">CANADA</p>
+                        </div>
+                        <div class="usa-img">
+                            <img src="https://th.bing.com/th?id=OIP.-QOvDHvJ328jiK4sNB9VrAHaE7&w=306&h=203&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" class="flag">
+                            <p class="flag-para">UAE</p>
+                        </div>
+                        <div class="usa-img">
+                            <img src="https://th.bing.com/th?id=OIP.2A0rcBfwW_fDIuv9YM9JmQHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" class="flag">
+                            <p class="flag-para">INDIA</p>
+                        </div>
+                    </div>
+    
+            </div>
+    
+    
+    
+            <div class="container-full">
+    
+                <div class="rev">
+                    <h3 class="text-center">What Customers Are Saying</h3>
+                    <a href="" class="ml-4">View all reviews</a>
+                </div>
+                <div class="review-section">
+                    <div class="review">
+                        <div class="revbox">
+                            <img src="https://www.fnp.com/images/pr/s/v20221118185233/fruit-overload-cake-half-kg_1.jpg" class="icon" />
+    
+                            <p class="ml-3"><mark>"All good"</mark></br>
+                                -vinay kumar</br>
+                                20/01/2024, 7:30PM</br>
+                                Delivered At:Vizag</br>
+                                Occasion:Birthday
+                            </p>
+                            <h6>
+                                <mark1>5.0</mark1>
+                            </h6>
+                            <style>
+                                mark1 {
+                                    background-color: green;
+                                    color: white;
+                                    padding: 3px;
+                                    margin-right: 10vw;
+    
+                                }
+                            </style>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="review">
+                        <div class="revbox">
+                            <img src="https://www.fnp.com/images/pr/s/v20221118185233/fruit-overload-cake-half-kg_1.jpg" class="icon" />
+    
+                            <p class="ml-3"><mark>"All good"</mark></br>
+                                -viha</br>
+                                20/06/2023, 7:30PM</br>
+                                Delivered At:Vizag</br>
+                                Occasion:Birthday
+                            </p>
+                            <h6>
+                                <mark1>5.0</mark1>
+                            </h6>
+                            <style>
+                                mark1 {
+                                    background-color: green;
+                                    color: white;
+                                    padding: 3px;
+                                    margin-right: 90px;
+                                }
+                            </style>
+                        </div>
+                    </div>
+    
+    
+                    <div class="review">
+                        <div class="revbox">
+                            <img src="https://www.fnp.com/images/pr/s/v20221118185233/fruit-overload-cake-half-kg_1.jpg" class="icon" />
+    
+                            <p class="ml-3"><mark>"All good"</mark></br>
+                                -Susi</br>
+                                20/07/2023, 6:30PM</br>
+                                Delivered At:Nellore</br>
+                                Occasion:Birthday
+                            </p>
+                            <h6>
+                                <mark1>5.0</mark1>
+                            </h6>
+                            <style>
+                                mark1 {
+                                    background-color: green;
+                                    color: white;
+                                    padding: 3px;
+    
+                                }
+                            </style>
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+        </div>
+    
+        <div class="down-cont p-3">
+            <h5>Get Online Cake Delivery for a Variety of Cake Flavors</h5>
+            <p>The best part about cake is that there can be a large variety of flavors and one can experiment with it quite often. Any flourishing cake shop would vouch by this criteria because variety keeps people interested. In our online cake shop, you would discover a plethora of cake flavors and we take a bit of pride in that. You would find a cake flavor for all your family members, friends, and relatives having varied preferences.</p>
+        </div>
+    
+    
+        <div class="world-wide">
+            <div class="flight">
+                <img src="https://th.bing.com/th?id=OIP.CPtI0yxM-86dCeqVMDQ6jwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" class="apple">
+                <h5 class="world-head">Worldwide Delivery</h5>
+                <p class="world-para">We deliver gifts to over 70 countries</p>
+            </div>
+            <div class="flight">
+                <img src="https://th.bing.com/th/id/OIP.-IpOioqNNjV26vGTiNdtvgHaK-?w=136&h=202&c=7&r=0&o=5&dpr=1.1&pid=1.7" class="apple">
+                <h5 class="world-head">100% Safe & Secure Payments</h5>
+                <p class="world-para">Pay using secure payment methods</p>
+            </div>
+            <div class="flight">
+                <img src="https://th.bing.com/th/id/OIP.EL0r8D-jr3g7vP6XS4HrKAHaHa?rs=1&pid=ImgDetMain" class="apple">
+                <h5 class="world-head">Dedicated Help Center</h5>
+                <p class="world-para">Call us +91 9212422000 | 8:00AM-10:30PM</p>
+            </div>
+            <div class="flight">
+                <img src="https://th.bing.com/th?id=OIP.NZRIw00OFG7klSj_2p8gvQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" class="apple">
+                <h5 class="world-head">Shop on the go</h5>
+                <p class="world-para">Download mobile app</p>
+            </div>
+        </div>
+    
+    
+        <div class="lastbar">
+            <p class="text-white p-2">© 1994-2024 fnp.com.All rights reserved.</p>
+    
+            <p class="sign text-white p-2">Keep In Touch</p>
+            <i class="fab fa-facebook user3"></i>
+            <i class="fab fa-twitter user3"></i>
+            <i class="fab fa-instagram user3"></i>
+            <i class="fab fa-pinterest user3"></i>
+        </div>
+</body>
+    
+</html>
